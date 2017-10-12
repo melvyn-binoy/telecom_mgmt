@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log in/Sign up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu:500');
+    body{
+      font-family: 'Ubuntu', sans-serif;
+    }
+    #loginpanel{
+      margin-top: 150px;
+      margin-left: 350px;
+      text-align: center;
+      border-color: #00CED1;
+      border-width: 2px;
+      font-weight: bold;
+    }
+  
+  </style>
+
+</head>
+
+<body>
+
+  <div id="loginpanel" class="well col-lg-6">
+
+    <div class="form">
+
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#login">Log In</a></li>
+        <li><a data-toggle="tab" href="#signup">Sign Up</a></li>
+        <li><a data-toggle="tab" href="#admin">Admin</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="login"  class="tab-pane fade in active">
+          <h3>Welcome Back!<br><br></h3>
+
+          <form action="login.php" method="POST">
+
+            <div class="field-wrap">
+              <label>Username<span class="req">*</span></label>
+              <input type="text"required autocomplete="on" name="username"/><br><br>
+            </div>
+
+            <div class="field-wrap">
+              <label>Password<span class="req">*</span></label>
+              <input type="password"required autocomplete="on" name="password"/><br><br>
+            </div>
+
+            <button class="button button-block">Log In</button>
+
+          </form>
+        </div>
+
+        <div id="signup" class="tab-pane fade">
+                  <h3>Welcome!<br><br></h3>
+
+                  <form action="signup.php" method="POST">
+
+                    <div class="field-wrap">
+                      <label>Username<span class="req">*</span></label>
+                      <input type="text"required autocomplete="on" name="username"/><br><br>
+                    </div>
+
+                    <div class="field-wrap">
+                      <label>Password<span class="req">*</span></label>
+                      <input type="password"required autocomplete="on" name="password"/><br><br>
+                    </div>
+
+                    <div class="field-wrap">
+                      <label>Name<span class="req">*</span></label>
+                      <input type="text"required autocomplete="off" name="name"/><br><br>
+                    </div>
+
+                    <div class="field-wrap">
+                      <label>Phone no.<span class="req">*</span></label>
+                      <input type="number"required autocomplete="off" name="phoneno"/><br><br>
+                    </div>
+
+<div class="field-wrap">
+                      <label>Email ID<span class="req">*</span></label>
+                      <input type="email"required autocomplete="on" name="email"/><br><br>
+                    </div>
+
+<div class="field-wrap">
+                      <label>Date of Birth<span class="req">*</span></label>
+                      <input type="date"required autocomplete="off" name="dob"/><br><br>
+                    </div>
+
+<div class="field-wrap">
+                      <label>Address<span class="req">*</span></label>
+                      <input type="text"required autocomplete="off" name="bill_address"/><br><br>
+                    </div>
+
+
+<div class="field-wrap">
+                      <label>City<span class="req">*</span></label>
+                      <input type="text"required autocomplete="on" name="city"/><br><br>
+                    </div>
+
+<div class="field-wrap">
+                      <label>State<span class="req">*</span></label>
+                      <input type="text"required autocomplete="on" name="state"/><br><br>
+                    </div>
+
+<div class="field-wrap">
+                      <label>Country<span class="req">*</span></label>
+                      <input type="text"required autocomplete="on" name="country"/><br><br>
+                    </div>
+
+
+
+                    <button class="button button-block">Sign up</button>
+
+                  </form>
+        </div>
+
+<div id="admin"  class="tab-pane fade">
+          <h3>Admin Login!<br><br></h3>
+
+          <form action="admin.php" method="POST">
+
+            <div class="field-wrap">
+              <label>Admin Username<span class="req">*</span></label>
+              <input type="text"required autocomplete="off" name="adname"/><br><br>
+            </div>
+
+            <div class="field-wrap">
+              <label>Admin Password<span class="req">*</span></label>
+              <input type="password"required autocomplete="off" name="adpassword"/><br><br>
+            </div>
+
+            <button class="button button-block">Log In</button>
+
+          </form>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+
+
